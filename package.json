@@ -25,13 +25,13 @@
     "dependencies": {
         "redis": "0.9.1",
         "backbone": "*",
-        "underscore": "*"
+        "underscore": "*",
         "backbone-super-sync": "0.0.5"
     },
     "devDependencies": {
         "mocha": "*",
         "sinon": "*",
         "should": "*",
-        "rewire": "*",
+        "rewire": "*"
     }
 }
