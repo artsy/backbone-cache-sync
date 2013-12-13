@@ -1,6 +1,11 @@
 # Backbone Cache Sync
 
-A server-side adapter that caches Backbone.fetch requests using [Redis](https://github.com/mranney/node_redis). Requires [backbone-super-sync](https://github.com/artsy/backbone-super-sync).
+An implementation of Backbone.sync that takes the `cache: true`
+option. This will store the response in Redis keyed by the url. The
+next request to that url with `cache: true` will fetch the cached data
+from [Redis](https://github.com/mranney/node_redis) instead of making
+a GET request. Requires
+[backbone-super-sync](https://github.com/artsy/backbone-super-sync).
 
 ## Example
 
