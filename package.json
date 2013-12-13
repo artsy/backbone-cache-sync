@@ -1,0 +1,37 @@
+{
+    "name": "backbone-cache-sync",
+    "version": "0.0.1",
+    "description": "A server-side adapter that caches Backbone.fetch requests using Redis.",
+    "keywords": [
+        "backbone",
+        "cache"
+    ],
+    "author": {
+        "name": "Craig Spaeth",
+        "email": "craigspaeth@gmail.com",
+        "url": "http://craigspaeth.com"
+    },
+    "contributors": [{
+        "name": "Brennan Moore",
+        "email": "brennanmoore@gmail.com",
+        "url": "http://brennanmoore.com"
+    }],
+    "engines": {
+        "node": ">= 0.10.x"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "dependencies": {
+        "redis": "0.9.1",
+        "backbone": "*",
+        "underscore": "*"
+        "backbone-super-sync": "0.0.5"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "sinon": "*",
+        "should": "*",
+        "rewire": "*",
+    }
+}
