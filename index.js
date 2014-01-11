@@ -29,7 +29,6 @@ module.exports = function(originalSync, redisUrl, defaultCacheTime, nodeEnv, cli
             return originalSync(method, model, options);
         }
 
-        // Get the url Backbone would have fetched and use it as cache key
         var cacheTime = (options && options.cacheTime) ? options.cacheTime : defaultCacheTime;
 
         // Get the url Backbone would have fetched and use it as cache key
