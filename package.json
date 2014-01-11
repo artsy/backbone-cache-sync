@@ -23,7 +23,7 @@
         "test": "make test"
     },
     "dependencies": {
-        "redis": "0.9.1",
+        "redis": "*",
         "backbone": "*",
         "underscore": "*",
         "backbone-super-sync": "0.0.5"
