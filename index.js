@@ -30,6 +30,9 @@ module.exports = function(originalSync, redisUrl, defaultCacheTime, nodeEnv, cli
         }
 
         // Get the url Backbone would have fetched and use it as cache key
+        var cacheTime = (options && options.cacheTime) ? options.cacheTime : defaultCacheTime;
+
+        // Get the url Backbone would have fetched and use it as cache key
         var key = (options ? options.url : false) || _.result(model, 'url');
 
         if (options.data) {
@@ -46,7 +49,7 @@ module.exports = function(originalSync, redisUrl, defaultCacheTime, nodeEnv, cli
             } else {
                 model.once('sync', function(m, res) {
                     client.set(key, JSON.stringify(res));
-                    return client.expire(key, defaultCacheTime);
+                    return client.expire(key, cacheTime);
                 });
                 return originalSync(method, model, options);
             }
