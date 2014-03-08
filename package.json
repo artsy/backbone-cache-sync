@@ -1,6 +1,6 @@
 {
     "name": "backbone-cache-sync",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A server-side adapter that caches Backbone.fetch requests using Redis.",
     "keywords": [
         "backbone",
@@ -26,7 +26,8 @@
         "redis": "*",
         "backbone": "*",
         "underscore": "*",
-        "backbone-super-sync": "0.0.5"
+        "backbone-super-sync": "0.0.5",
+        "q": "*"
     },
     "devDependencies": {
         "mocha": "*",
